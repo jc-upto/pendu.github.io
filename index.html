@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Pendu game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Pendu !</h1><span>by Nux007</span>
+</header>
+    <div id="viewport">
+
+        <div id="rules">
+            Devinez le mot choisi, utilisez le champs mis à disposition, ainsi que le bouton <strong>Essayer</strong>
+            pour tester une lettre.
+            <div id="attempts-disclamer">Vous disposez de <strong>10 tentatives</strong> !</div>
+        </div>
+
+        <div id="player-area">
+            <div>
+                <label for="player-entry" id="player-entry-label">Entrez une lettre</label>
+                <input type="text" id="player-entry">
+                <button id="submit">Essayer</button>
+            </div>
+            <div id="attemptsLeft"></div>
+            <div id="messages">
+
+            </div>
+        </div>
+        <div id="game-area">
+            <div id="word-area"></div>
+            <canvas id="pendu" width="400" height="300"></canvas>
+        </div>
+    </div>
+    <script src="js/PenduGame.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
